@@ -1,4 +1,5 @@
-﻿using Kalendarzyk.Models.EventTypesModels;
+﻿using Kalendarzyk.Models.EventModels;
+using Kalendarzyk.Models.EventTypesModels;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
