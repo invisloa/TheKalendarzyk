@@ -9,6 +9,7 @@ namespace TheKalendarzyk.ViewModels.Events
     public class EventGroupViewModel : BaseViewModel
     {
         private EventGroupModel _eventGroupModel;
+        private bool _isSelected;
 
 
         public EventGroupViewModel(EventGroupModel eventGroupModel)
@@ -28,7 +29,18 @@ namespace TheKalendarzyk.ViewModels.Events
                 }
             }
         }
-
+        public bool IsSelected
+        {
+            get => _isSelected;
+            set
+            {
+                if (_isSelected != value)
+                {
+                    _isSelected = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
         public string Title
         {
             get => _eventGroupModel.Title;
